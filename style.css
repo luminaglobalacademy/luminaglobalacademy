@@ -2,16 +2,16 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f5f7fb;
+background:#f4f6fb;
 }
 
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:#001f3f;
+background:#0a2540;
 color:white;
-padding:15px 40px;
+padding:15px 30px;
 }
 
 .navbar nav a{
@@ -23,66 +23,88 @@ font-weight:bold;
 
 .hero{
 height:90vh;
-background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+background:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
 background-size:cover;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-color:white;
 }
 
-.hero-text{
-background:rgba(0,0,0,0.5);
+.hero-box{
+background:rgba(0,0,0,0.6);
+color:white;
 padding:40px;
 border-radius:10px;
 }
 
 .btn{
-background:#00aaff;
+background:#2ea3f2;
 padding:12px 25px;
 color:white;
 text-decoration:none;
 border-radius:5px;
 }
 
-.video-section{
-text-align:center;
+.features{
 padding:60px;
+text-align:center;
 }
 
-.cards{
+.grid{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:30px;
-padding:40px;
+justify-content:center;
 }
 
-.card{
+.feature, .card{
 background:white;
-width:250px;
 padding:20px;
+width:250px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
 }
 
-.card img{
+.video{
+text-align:center;
+padding:50px;
+}
+
+.testimonials{
+text-align:center;
+padding:50px;
+background:#eef2f7;
+}
+
+.testimonial{
+display:none;
+}
+
+.testimonial.active{
+display:block;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.gallery img{
 width:100%;
 border-radius:10px;
 }
 
 .page{
-padding:60px;
 max-width:900px;
 margin:auto;
+padding:50px;
 }
 
 .banner{
 width:100%;
 border-radius:10px;
-margin-top:20px;
 }
 
 .form{
@@ -91,7 +113,7 @@ flex-direction:column;
 gap:15px;
 }
 
-.form input, .form textarea{
+.form input,.form textarea{
 padding:10px;
 border-radius:5px;
 border:1px solid #ccc;
@@ -99,16 +121,16 @@ border:1px solid #ccc;
 
 button{
 padding:12px;
-background:#0077ff;
+background:#2ea3f2;
 color:white;
 border:none;
 border-radius:5px;
 }
 
 footer{
-text-align:center;
-background:#001f3f;
+background:#0a2540;
 color:white;
+text-align:center;
 padding:20px;
 margin-top:40px;
 }
