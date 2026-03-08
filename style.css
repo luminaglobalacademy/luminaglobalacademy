@@ -1,17 +1,20 @@
+
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family:Arial;
+background:#f5f7fb;
 }
 
-header{
-background:#002b5b;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#001f3f;
 color:white;
-text-align:center;
-padding:20px;
+padding:15px 40px;
 }
 
-nav a{
+.navbar nav a{
 color:white;
 margin:10px;
 text-decoration:none;
@@ -19,30 +22,93 @@ font-weight:bold;
 }
 
 .hero{
+height:90vh;
+background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:80px;
-background:#0a6cff;
 color:white;
 }
 
-.btn{
-background:white;
-color:#0a6cff;
-padding:10px 20px;
-text-decoration:none;
-font-weight:bold;
+.hero-text{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
 }
 
-.features{
+.btn{
+background:#00aaff;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.video-section{
+text-align:center;
+padding:60px;
+}
+
+.cards{
 display:flex;
-justify-content:space-around;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
 padding:40px;
+}
+
+.card{
 background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.page{
+padding:60px;
+max-width:900px;
+margin:auto;
+}
+
+.banner{
+width:100%;
+border-radius:10px;
+margin-top:20px;
+}
+
+.form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.form input, .form textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:12px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:5px;
 }
 
 footer{
 text-align:center;
-padding:20px;
-background:#002b5b;
+background:#001f3f;
 color:white;
+padding:20px;
+margin-top:40px;
 }
